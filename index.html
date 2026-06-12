@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR" style="background-color: #070a13; color: #f1f5f9;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>UBS SMART Control</title>
+    
+    <!-- PWA primary configs -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#070a13" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    
+    <!-- Apple / iOS / Safari specialized support tags for tablet fullscreen installs -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="UBS SMART" />
+    <link rel="apple-touch-icon" href="/icon.svg" />
+    
+    <script>
+      // Automatic Progressive Web App Service Worker registration on first view
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js")
+            .then((reg) => {
+              console.log("[PWA Engine] Service Worker registrado com sucesso:", reg.scope);
+            })
+            .catch((err) => {
+              console.warn("[PWA Engine] Falha ao registrar Service Worker:", err);
+            });
+        });
+      }
+    </script>
+  </head>
+  <body class="bg-[#070a13] text-[#f1f5f9] select-none scale-100 duration-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,621 @@
+{
+  "users": [
+    {
+      "id": "usr-admin",
+      "nome": "Administrador Geral",
+      "matricula": "MAT-001",
+      "funcao": "Administrador",
+      "turno": "Administrativo",
+      "unidade": "UBS-MG",
+      "email": "admin@ubs.com",
+      "passwordHash": "$2b$10$.laUFEdHRyUpl4oVHejIGubwX5CD6NDpnAo3BaoOveBn9MPcFjsBi",
+      "createdAt": "2026-06-12T11:06:31.304Z"
+    },
+    {
+      "id": "usr-operador",
+      "nome": "João Silva - Op",
+      "matricula": "MAT-102",
+      "funcao": "Operador",
+      "turno": "Turno A",
+      "unidade": "UBS-GO",
+      "email": "operator@ubs.com",
+      "passwordHash": "$2b$10$.laUFEdHRyUpl4oVHejIGuqIJwoi9dXZFO33PraWGk5wpYBjTsM4u",
+      "createdAt": "2026-06-12T11:06:31.429Z"
+    },
+    {
+      "id": "usr-lider",
+      "nome": "Marcos Souza",
+      "matricula": "MAT-203",
+      "funcao": "Líder",
+      "turno": "Turno B",
+      "unidade": "UBS-BA",
+      "email": "lider@ubs.com",
+      "passwordHash": "$2b$10$.laUFEdHRyUpl4oVHejIGu2zfiGCgILS7C1axg08/Ca9m/SCHy4sK",
+      "createdAt": "2026-06-12T11:06:31.572Z"
+    },
+    {
+      "id": "usr-supervisor",
+      "nome": "Juliana Santos",
+      "matricula": "MAT-304",
+      "funcao": "Supervisor",
+      "turno": "Administrativo",
+      "unidade": "UBS-TO",
+      "email": "supervisor@ubs.com",
+      "passwordHash": "$2b$10$.laUFEdHRyUpl4oVHejIGumqS1zSR7OuiVyqcdybLTKJ.guGt1ZGO",
+      "createdAt": "2026-06-12T11:06:31.728Z"
+    },
+    {
+      "id": "usr-coordenador",
+      "nome": "André Oliveira",
+      "matricula": "MAT-405",
+      "funcao": "Coordenador",
+      "unidade": "UBS-MG",
+      "turno": "Administrativo",
+      "email": "coordenador@ubs.com",
+      "passwordHash": "$2b$10$.laUFEdHRyUpl4oVHejIGu5hIN7v4a8nxvnSk9wULTTqmhHiziebC",
+      "createdAt": "2026-06-12T11:06:31.890Z"
+    }
+  ],
+  "ubs": [
+    {
+      "id": "ubs-1",
+      "nome": "UBS-MG",
+      "cidade": "Patos de Minas",
+      "estado": "MG",
+      "responsavel": "Roberto Silva",
+      "status": "Ativa",
+      "createdAt": "2026-06-12T11:06:31.154Z",
+      "metaDiaria": 200
+    },
+    {
+      "id": "ubs-2",
+      "nome": "UBS-GO",
+      "cidade": "Rio Verde",
+      "estado": "GO",
+      "responsavel": "Amanda Souza",
+      "status": "Ativa",
+      "createdAt": "2026-06-12T11:06:31.155Z",
+      "metaDiaria": 180
+    },
+    {
+      "id": "ubs-3",
+      "nome": "UBS-BA",
+      "cidade": "Luís Eduardo Magalhães",
+      "estado": "BA",
+      "responsavel": "Carlos Santos",
+      "status": "Ativa",
+      "createdAt": "2026-06-12T11:06:31.155Z",
+      "metaDiaria": 150
+    },
+    {
+      "id": "ubs-4",
+      "nome": "UBS-TO",
+      "cidade": "Porto Nacional",
+      "estado": "TO",
+      "responsavel": "Maria Oliveira",
+      "status": "Ativa",
+      "createdAt": "2026-06-12T11:06:31.155Z",
+      "metaDiaria": 120
+    }
+  ],
+  "equipments": [
+    {
+      "id": "eq-1",
+      "nome": "Classificador Pneumático KW",
+      "processo": "Limpeza",
+      "setor": "Limpeza & Beneficiamento",
+      "unidade": "UBS-MG",
+      "fabricante": "Kepler Weber",
+      "modelo": "KWXS-100",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.890Z"
+    },
+    {
+      "id": "eq-2",
+      "nome": "Secador Rotativo SR-50",
+      "processo": "Secagem",
+      "setor": "Recepção & Secagem",
+      "unidade": "UBS-MG",
+      "fabricante": "Casp",
+      "modelo": "SEC-ROT-50",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.890Z"
+    },
+    {
+      "id": "eq-3",
+      "nome": "Mesa Gravimétrica MG-300",
+      "processo": "Beneficiamento",
+      "setor": "Seleção Sementes",
+      "unidade": "UBS-MG",
+      "fabricante": "Silpar",
+      "modelo": "MG-300",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.890Z"
+    },
+    {
+      "id": "eq-4",
+      "nome": "Tratadora de Sementes TSI-10",
+      "processo": "Tratamento",
+      "setor": "TSI - Industrial",
+      "unidade": "UBS-GO",
+      "fabricante": "Syngenta",
+      "modelo": "Plural-10",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.890Z"
+    },
+    {
+      "id": "eq-5",
+      "nome": "Ensacadora Automática Toledo",
+      "processo": "Ensaque",
+      "setor": "Expedição",
+      "unidade": "UBS-GO",
+      "fabricante": "Toledo",
+      "modelo": "9091",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.890Z"
+    },
+    {
+      "id": "eq-6",
+      "nome": "Recepção Tombador T-80",
+      "processo": "Recebimento",
+      "setor": "Recepção & Descarga",
+      "unidade": "UBS-BA",
+      "fabricante": "Saur",
+      "modelo": "TOMB-80",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.890Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-177",
+      "nome": "ELEVADOR DA MOEGA",
+      "processo": "Recebimento",
+      "setor": "Recebimento e Pré-Limpeza",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-199",
+      "nome": "PRÉ-LIMPEZA",
+      "processo": "Limpeza",
+      "setor": "Recebimento e Pré-Limpeza",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-459",
+      "nome": "MESA PÓS-LIMPEZA",
+      "processo": "Limpeza",
+      "setor": "Recebimento e Pré-Limpeza",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-953",
+      "nome": "ROSCA DE DESCARTE",
+      "processo": "Limpeza",
+      "setor": "Recebimento e Pré-Limpeza",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-952",
+      "nome": "ELEVADOR DO ESPIRAL",
+      "processo": "Limpeza",
+      "setor": "Recebimento e Pré-Limpeza",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-78",
+      "nome": "FITA TRANSPORTADORA 01",
+      "processo": "Recebimento",
+      "setor": "Transporte Interno",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-964",
+      "nome": "FITA TRANSPORTADORA 02",
+      "processo": "Limpeza",
+      "setor": "Transporte Interno",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-622",
+      "nome": "PADRONIZADOR P1",
+      "processo": "Beneficiamento",
+      "setor": "Beneficiamento",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-257",
+      "nome": "PADRONIZADOR P2",
+      "processo": "Beneficiamento",
+      "setor": "Beneficiamento",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-937",
+      "nome": "ELEVADOR P1",
+      "processo": "Beneficiamento",
+      "setor": "Elevadores",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-757",
+      "nome": "ELEVADOR P2",
+      "processo": "Beneficiamento",
+      "setor": "Elevadores",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-762",
+      "nome": "ELEVADOR INTERMEDIÁRIO",
+      "processo": "Beneficiamento",
+      "setor": "Elevadores",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-954",
+      "nome": "ELEVADOR DE ENSAQUE",
+      "processo": "Ensaque",
+      "setor": "Elevadores",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-55",
+      "nome": "MESA DENSIMÉTRICA 01",
+      "processo": "Beneficiamento",
+      "setor": "Mesas Densimétricas",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-236",
+      "nome": "MESA DENSIMÉTRICA 02",
+      "processo": "Beneficiamento",
+      "setor": "Mesas Densimétricas",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-136",
+      "nome": "MESA DENSIMÉTRICA 03",
+      "processo": "Beneficiamento",
+      "setor": "Mesas Densimétricas",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-286",
+      "nome": "MESA DENSIMÉTRICA 04",
+      "processo": "Beneficiamento",
+      "setor": "Mesas Densimétricas",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-951",
+      "nome": "MESA DENSIMÉTRICA 05",
+      "processo": "Beneficiamento",
+      "setor": "Mesas Densimétricas",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-809",
+      "nome": "SILO DE ESPERA",
+      "processo": "Secagem",
+      "setor": "Armazenamento e Expedição",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-945",
+      "nome": "CAIXA DE ENSAQUE",
+      "processo": "Ensaque",
+      "setor": "Armazenamento e Expedição",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    },
+    {
+      "id": "eq-mg-1781262391891-746",
+      "nome": "FULL COLOR",
+      "processo": "Tratamento",
+      "setor": "Tratamento Industrial",
+      "unidade": "UBS-MG",
+      "fabricante": "Equipamento UBS-MG",
+      "modelo": "PADRÃO",
+      "status": "Ativo",
+      "createdAt": "2026-06-12T11:06:31.891Z"
+    }
+  ],
+  "stops": [
+    {
+      "id": "stp-1",
+      "ubs": "UBS-MG",
+      "processo": "Secagem",
+      "equipamentoId": "eq-2",
+      "equipamentoNome": "Secador Rotativo SR-50",
+      "operador": "João Silva - Op",
+      "dataInicio": "2026-06-07",
+      "horaInicio": "08:15",
+      "dataFim": "2026-06-07",
+      "horaFim": "11:45",
+      "motivo": "Troca do mancal do eixo traseiro que estava superaquecendo",
+      "categoria": "Mecânica",
+      "observacao": "Mancal original foi substituído por sobressalente em estoque. Testado sob carga e liberado.",
+      "tempoParadoMinutos": 210,
+      "tempoProdutivoMinutos": 1440,
+      "impactouProducao": true,
+      "createdAt": "2026-06-12T11:06:31.890Z"
+    },
+    {
+      "id": "stp-2",
+      "ubs": "UBS-MG",
+      "processo": "Limpeza",
+      "equipamentoId": "eq-1",
+      "equipamentoNome": "Classificador Pneumático KW",
+      "operador": "Marcos Souza",
+      "dataInicio": "2026-06-09",
+      "horaInicio": "14:00",
+      "dataFim": "2026-06-09",
+      "horaFim": "15:30",
+      "motivo": "Atuador pneumático da comporta de descarte travou",
+      "categoria": "Elétrica",
+      "observacao": "Efetuada limpeza de poeira do sensor e lubrificação do pistão. Funcionamento normalizado.",
+      "tempoParadoMinutos": 90,
+      "tempoProdutivoMinutos": 1800,
+      "impactouProducao": true,
+      "createdAt": "2026-06-12T11:06:31.890Z"
+    },
+    {
+      "id": "stp-3",
+      "ubs": "UBS-GO",
+      "processo": "Tratamento",
+      "equipamentoId": "eq-4",
+      "equipamentoNome": "Tratadora de Sementes TSI-10",
+      "operador": "João Silva - Op",
+      "dataInicio": "2026-06-11",
+      "horaInicio": "09:00",
+      "dataFim": "2026-06-11",
+      "horaFim": "13:00",
+      "motivo": "Troca de cultivar no loteamento - Higienização completa da câmara",
+      "categoria": "Troca de cultivar",
+      "observacao": "Limpeza completa para evitar contaminação genética entre cultivares de soja.",
+      "tempoParadoMinutos": 240,
+      "tempoProdutivoMinutos": 2400,
+      "impactouProducao": true,
+      "createdAt": "2026-06-12T11:06:31.890Z"
+    },
+    {
+      "id": "stp-4",
+      "ubs": "UBS-MG",
+      "processo": "Beneficiamento",
+      "equipamentoId": "eq-3",
+      "equipamentoNome": "PADRONIZADOR P1",
+      "operador": "André Oliveira",
+      "dataInicio": "2026-06-12",
+      "horaInicio": "07:30",
+      "dataFim": "2026-06-12",
+      "horaFim": "15:30",
+      "motivo": "Quebra do motor principal do elevador acoplado",
+      "categoria": "Mecânica",
+      "observacao": "O equipamento PADRONIZADOR P1 gerou 8 horas de parada produtiva no período.",
+      "tempoParadoMinutos": 480,
+      "tempoProdutivoMinutos": 600,
+      "impactouProducao": true,
+      "createdAt": "2026-06-12T11:06:31.890Z"
+    },
+    {
+      "id": "stp-5",
+      "ubs": "UBS-MG",
+      "processo": "Beneficiamento",
+      "equipamentoId": "eq-mg-mesa-3",
+      "equipamentoNome": "MESA DENSIMÉTRICA 03",
+      "operador": "André Oliveira",
+      "dataInicio": "2026-06-12",
+      "horaInicio": "16:00",
+      "dataFim": "2026-06-12",
+      "horaFim": "16:30",
+      "motivo": "Ajuste fino de ângulo de vibração da mesa",
+      "categoria": "Operacional",
+      "observacao": "A MESA DENSIMÉTRICA 03 apresentou ocorrências, porém sem impacto no beneficiamento.",
+      "tempoParadoMinutos": 30,
+      "tempoProdutivoMinutos": 360,
+      "impactouProducao": false,
+      "createdAt": "2026-06-12T11:06:31.890Z"
+    }
+  ],
+  "productions": [
+    {
+      "id": "prd-1",
+      "material": "Soja",
+      "cultivar": "M7739 IPRO",
+      "lote": "SOJ-2026-A101",
+      "quantidade": 1250,
+      "processo": "Limpeza",
+      "operador": "João Silva - Op",
+      "ubs": "UBS-MG",
+      "dataRegistro": "2026-06-07",
+      "createdAt": "2026-06-12T11:06:31.890Z"
+    },
+    {
+      "id": "prd-2",
+      "material": "Soja",
+      "cultivar": "M8210 IPRO",
+      "lote": "SOJ-2026-A102",
+      "quantidade": 980,
+      "processo": "Beneficiamento",
+      "operador": "Marcos Souza",
+      "ubs": "UBS-MG",
+      "dataRegistro": "2026-06-09",
+      "createdAt": "2026-06-12T11:06:31.890Z"
+    },
+    {
+      "id": "prd-3",
+      "material": "Milho",
+      "cultivar": "AG8030 PRO3",
+      "lote": "MIL-2026-B055",
+      "quantidade": 1100,
+      "processo": "Secagem",
+      "operador": "João Silva - Op",
+      "ubs": "UBS-GO",
+      "dataRegistro": "2026-06-11",
+      "createdAt": "2026-06-12T11:06:31.890Z"
+    },
+    {
+      "id": "prd-4",
+      "material": "Algodão",
+      "cultivar": "DP1852 B3RF",
+      "lote": "ALG-2026-X01",
+      "quantidade": 450,
+      "processo": "Ensaque",
+      "operador": "Juliana Santos",
+      "ubs": "UBS-GO",
+      "dataRegistro": "2026-06-12",
+      "createdAt": "2026-06-12T11:06:31.890Z"
+    },
+    {
+      "id": "prd-5",
+      "material": "Soja",
+      "cultivar": "M7739 IPRO",
+      "lote": "SOJ-2026-A103",
+      "quantidade": 1530,
+      "processo": "Tratamento",
+      "operador": "André Oliveira",
+      "ubs": "UBS-MG",
+      "dataRegistro": "2026-06-12",
+      "createdAt": "2026-06-12T11:06:31.890Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1781265828775-438",
+      "usuario": "admin@ubs.com",
+      "data": "2026-06-12",
+      "hora": "12:03:48",
+      "acao": "Inclusão",
+      "detalhes": "Registrou produção diária de 200 t de Soja na UBS UBS-MG"
+    },
+    {
+      "id": "log-1781265665679-546",
+      "usuario": "Administrador Geral",
+      "data": "2026-06-12",
+      "hora": "12:01:05",
+      "acao": "Login",
+      "detalhes": "Operador realizou login identificando-se como: Administrador Geral (Administrador)"
+    },
+    {
+      "id": "log-1",
+      "usuario": "admin@ubs.com",
+      "data": "2026-06-12",
+      "hora": "08:00:15",
+      "acao": "Login",
+      "detalhes": "Login bem sucedido do Administrador via painel web corporativo."
+    },
+    {
+      "id": "log-2",
+      "usuario": "admin@ubs.com",
+      "data": "2026-06-12",
+      "hora": "08:15:30",
+      "acao": "Inclusão",
+      "detalhes": "Cadastrado novo equipamento: Recebimento Tombador T-80."
+    },
+    {
+      "id": "log-3",
+      "usuario": "operator@ubs.com",
+      "data": "2026-06-12",
+      "hora": "11:00:00",
+      "acao": "Login",
+      "detalhes": "Login do Operador via terminal de campo."
+    },
+    {
+      "id": "log-4",
+      "usuario": "operator@ubs.com",
+      "data": "2026-06-12",
+      "hora": "11:12:00",
+      "acao": "Inclusão",
+      "detalhes": "Registrada parada operacional no Secador Rotativo SR-50."
+    }
+  ],
+  "dailyProductions": [
+    {
+      "id": "dlp-1781265828775",
+      "unidade": "UBS-MG",
+      "data": "2026-06-12",
+      "material": "Soja",
+      "quantidadeToneladas": 200,
+      "operador": "Administrador Geral",
+      "hora": "09:03",
+      "createdAt": "2026-06-12T12:03:48.775Z"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="128" fill="#070a13" stroke="#151f33" stroke-width="16" />
+  <!-- Factory / Silo Shape + Glowing Seed Leaf inside -->
+  <path d="M 128 320 L 128 160 L 256 96 L 384 160 L 384 320 L 256 384 Z" fill="none" stroke="#1565C0" stroke-width="14" stroke-linejoin="round" />
+  <!-- Horizontal segments to look like processing layers -->
+  <line x1="128" y1="200" x2="384" y2="200" stroke="#151f33" stroke-width="10" />
+  <line x1="128" y1="280" x2="384" y2="280" stroke="#151f33" stroke-width="10" />
+  <!-- Leaf representing seeds / soybean / corn inside -->
+  <path d="M 256 140 C 290 140, 310 180, 256 260 C 202 180, 222 140, 256 140 Z" fill="#00C853" opacity="0.95" />
+  <path d="M 256 180 C 275 180, 285 205, 256 245 C 227 205, 237 180, 256 180 Z" fill="#ffffff" opacity="0.35" />
+  <!-- Smart circuit links glowing around it -->
+  <!-- Bottom connection lines -->
+  <circle cx="256" cy="384" r="14" fill="#00C853" />
+  <path d="M 256 384 L 256 440" fill="none" stroke="#00C853" stroke-width="10" />
+  <circle cx="256" cy="440" r="18" fill="#1565C0" />
+  
+  <circle cx="128" cy="240" r="10" fill="#1565C0" />
+  <path d="M 128 240 L 80 240 L 80 300" fill="none" stroke="#1565C0" stroke-width="8" stroke-linejoin="round" />
+  <circle cx="80" cy="300" r="14" fill="#00C853" />
+
+  <circle cx="384" cy="240" r="10" fill="#1565C0" />
+  <path d="M 384 240 L 432 240 L 432 300" fill="none" stroke="#1565C0" stroke-width="8" stroke-linejoin="round" />
+  <circle cx="432" cy="300" r="14" fill="#00C853" />
+</svg>

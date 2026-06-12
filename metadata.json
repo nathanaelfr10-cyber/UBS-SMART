@@ -1,0 +1,6 @@
+{
+  "name": "UBS SMART",
+  "description": "Sistema corporativo profissional para gestao de eficiencia operacional, producao, paradas e auditoria de Unidades de Beneficiamento de Sementes (UBS).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
